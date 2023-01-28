@@ -1,4 +1,4 @@
-# Proyecto Final de la Diplomatura Universitaria en “BASE DE DATOS - SQL DESDE CERO"
+# Proyecto Final de la Diplomatura Universitaria en “BASE DE DATOS - SQL DESDE CERO" - UNJU
 
 ## 1ra Entrega
 
