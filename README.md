@@ -7,8 +7,8 @@
 - Diagrama de Entidad Relación del proyecto.
 - Listado de las tablas que comprenden la base de datos.
 - Script en SQL de creación de la base de datos y tablas.
-
-
+<br><br>
+---
 ## Herramientas utlizadas en la creacion del Proyecto
 - MySQL.
 - MySQL Workbench.
