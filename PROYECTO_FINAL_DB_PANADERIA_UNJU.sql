@@ -50,7 +50,7 @@ CREATE TABLE productos (
 CREATE TABLE insumos (
 	id_insumo int NOT NULL,
     id_proveedor int NOT NULL,
-    nombre varchar(150),
+    nombre varchar(150) NOT NULL,
     cantidad int NOT NULL,
     PRIMARY KEY (id_insumo)
 );
@@ -68,7 +68,7 @@ CREATE TABLE proveedores (
 -- Creación de relaciones (FK)
 ALTER TABLE ventas ADD CONSTRAINT fk_legajo FOREIGN KEY (legajo) REFERENCES empleados(legajo);
 ALTER TABLE ventas ADD CONSTRAINT fk_id_producto FOREIGN KEY (id_producto) REFERENCES productos(id_producto);
-ALTER TABLE produccion ADD CONSTRAINT fk_legajo_prod FOREIGN KEY (legajo) REFERENCES empleados(legajo);
+ALTER TABLE produccion ADD CONSTRAINT fk_legajo_prod FOREIGN KEY (legajo_prod) REFERENCES empleados(legajo);
 ALTER TABLE produccion ADD CONSTRAINT fk_id_insumo FOREIGN KEY (id_insumo) REFERENCES insumos(id_insumo);
 ALTER TABLE productos ADD CONSTRAINT fk_id_lote_prod FOREIGN KEY (id_lote_prod) REFERENCES productos(id_producto);
 ALTER TABLE insumos ADD CONSTRAINT fk_id_proveedor FOREIGN KEY (id_proveedor) REFERENCES proveedores(id_proveedor);
